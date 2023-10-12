@@ -1,0 +1,17 @@
+# ninja log v5
+3	1103	1697126141511076577	CMakeFiles/StacksUponStacksOfEvaluation.dir/main.cpp.o	6cc889eb88cf8241
+1103	1258	1697126141666284434	StacksUponStacksOfEvaluation	7ae3dd0af884ad9e
+0	12	0	clean	df35552208352023
+9	2127	1697126122411134723	CMakeFiles/StacksUponStacksOfEvaluation.dir/StackEvaluator.cpp.o	e197e9f02f9d7452
+1	758	1697126149358024236	CMakeFiles/StacksUponStacksOfEvaluation.dir/main.cpp.o	6cc889eb88cf8241
+758	884	1697126149485137728	StacksUponStacksOfEvaluation	7ae3dd0af884ad9e
+3	742	1697126157598009050	CMakeFiles/StacksUponStacksOfEvaluation.dir/main.cpp.o	6cc889eb88cf8241
+742	877	1697126157736798966	StacksUponStacksOfEvaluation	7ae3dd0af884ad9e
+5	1267	1697126214760756625	CMakeFiles/StacksUponStacksOfEvaluation.dir/main.cpp.o	6cc889eb88cf8241
+1267	1404	1697126214897523230	StacksUponStacksOfEvaluation	7ae3dd0af884ad9e
+5	2139	1697126322587696538	CMakeFiles/StacksUponStacksOfEvaluation.dir/StackEvaluator.cpp.o	e197e9f02f9d7452
+2139	2310	1697126322772519706	StacksUponStacksOfEvaluation	7ae3dd0af884ad9e
+4	1716	1697126338521182859	CMakeFiles/StacksUponStacksOfEvaluation.dir/StackEvaluator.cpp.o	e197e9f02f9d7452
+1716	1880	1697126338679040452	StacksUponStacksOfEvaluation	7ae3dd0af884ad9e
+75	4132	1697126430712621254	CMakeFiles/StacksUponStacksOfEvaluation.dir/StackEvaluator.cpp.o	e197e9f02f9d7452
+4133	4499	1697126431098530885	StacksUponStacksOfEvaluation	7ae3dd0af884ad9e
