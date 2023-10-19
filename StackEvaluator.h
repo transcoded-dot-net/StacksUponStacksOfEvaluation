@@ -14,8 +14,8 @@ class StackEvaluator {
     int num1;
     int num2;
     char currentChar;
-    char lastChar;
-    bool negative_flag;
+    char lastChar = ' ';
+    bool negative_flag = false;
     int result;
     void calculate ();
     void parenthesisHandler();

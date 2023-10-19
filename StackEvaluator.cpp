@@ -56,7 +56,7 @@ void StackEvaluator::parser(string equation) {
                 equation.erase(0,1);
                 int num3 = stoi(number);
                 // negative check
-                if (negative_flag != NULL && negative_flag == true){
+                if (negative_flag){
                     num3 = num3 * -1;
                     negative_flag = false;
                 }
@@ -74,7 +74,7 @@ void StackEvaluator::parser(string equation) {
                 if (currentChar != '-')
                     operands.push(currentChar);
                 else
-                    if (lastChar != NULL && isdigit(lastChar))
+                    if (lastChar != ' ' && isdigit(lastChar))
                         operands.push(currentChar);
                     else
                         negative_flag = true;
