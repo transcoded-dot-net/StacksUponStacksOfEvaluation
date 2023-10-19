@@ -81,7 +81,7 @@ void StackEvaluator::parser(string equation) {
 
                 //checks if parenthesis acts as multiplication
                 if (currentChar == '('){
-                    if(isdigit(lastChar))
+                    if(isdigit(lastChar) || lastChar == ')')
                         operands.push('*');
                 }
 
@@ -91,7 +91,7 @@ void StackEvaluator::parser(string equation) {
                 //clean up
                 lastChar =equation.at(0);
                 equation.erase(0,1);
-                currentChar = equation.at(0);
+
 
             }
 

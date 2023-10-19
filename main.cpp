@@ -11,6 +11,7 @@ int main() {
     StackEvaluator stack_eval;
     //user input for equation
     string equation;
+    cout << "type in your equation:";
     cin >> equation;
     //removing whitespaces
     equation.erase(std::remove_if(equation.begin(), equation.end(), ::isspace),
