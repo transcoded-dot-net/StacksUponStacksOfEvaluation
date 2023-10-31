@@ -5,34 +5,38 @@
 #include "StackEvaluator.h"
 //stack logic processor
 void StackEvaluator::calculate() {
+    // popping out 2 numbers to evaluate
     num1 = numbers.top();
     numbers.pop();
     num2 = numbers.top();
     numbers.pop();
-        switch (operands.top()) {
-            case '+':
-                numbers.push(num2+num1);
-                break;
-            case '-':
-                numbers.push(num2-num1);
-                break;
-            case '*':
-                numbers.push(num2*num1);
-                break;
-            case '/':
-                numbers.push(num2/num1);
-                break;
-            case '(':
-                numbers.push(num2*num1);
-                break;
-        }
-
+    switch (operands.top()) {
+        case '+':
+            numbers.push(num2 + num1);
+            break;
+        case '-':
+            numbers.push(num2 - num1);
+            break;
+        case '*':
+            numbers.push(num2 * num1);
+            break;
+        case '/':
+            numbers.push(num2 / num1);
+            break;
+        case '(':
+            numbers.push(num2 * num1);
+            break;
+    }
+    // setting result
     result = numbers.top();
+    // popping operand
     operands.pop();
 }
-//handles parantheses
+//handles parentheses
 void StackEvaluator::parenthesisHandler() {
+    // pop ')'
     operands.pop();
+    //do all operations within parenthesis
     while (operands.top() != '(')
     {
         calculate();
@@ -70,11 +74,13 @@ void StackEvaluator::parser(string equation) {
             }
             else {
                 cout << " "<< currentChar;
-                //parser to determine if - is minus or negative
+                // pushes all obvious chars
                 if (currentChar != '-')
                     operands.push(currentChar);
+                    //parser to determine if - is minus or negative
                 else
-                    if (lastChar != ' ' && isdigit(lastChar))
+                    //if the last char isn't empty, and is a number or paranthesis end bracket, then must be negative
+                    if (lastChar != ' ' && (isdigit(lastChar)||lastChar == ')'))
                         operands.push(currentChar);
                     else
                         negative_flag = true;
